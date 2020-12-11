@@ -6,7 +6,12 @@
     <script src="bundle.js" async></script>
   </head>
   <body>
-    <div data-controller="slideshow" data-slideshow-index-value="0">
+    <div
+      data-controller="content-loader"
+      data-content-loader-url-value="/messages.html"
+      data-content-loader-refresh-interval-value="5000"
+    ></div>
+    <!-- <div data-controller="slideshow" data-slideshow-index-value="0">
       <button data-action="slideshow#previous">←</button>
       <button data-action="slideshow#next">→</button>
 
@@ -14,7 +19,7 @@
       <div data-slideshow-target="slide">🙈</div>
       <div data-slideshow-target="slide">🙉</div>
       <div data-slideshow-target="slide">🙊</div>
-    </div>
+    </div> -->
     <!-- <div data-controller="clipboard">
       PIN:
       <input data-clipboard-target="source" type="text" value="1234" readonly />
